@@ -2,13 +2,13 @@ import React from 'react';
 
 import FormDeContato from "../components/Login/Login.jsx"
 
-const LoginPage = () => {
+const PerfilPage = () => {
 
     return (
         <>
-        <Login/>
+
         </>
     );
   }
   
-  export default LoginPage;
+  export default PerfilPage;

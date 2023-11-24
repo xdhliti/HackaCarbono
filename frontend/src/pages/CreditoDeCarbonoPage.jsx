@@ -10,6 +10,9 @@ const CreditoDeCarbonoPage = () => {
         <p>
          Como funciona a dinamica de crédito de carbono em nosso site
         </p>
+        <img src="../../../public/imagemCreditoCarbono.jpg" alt="explicação do crédito de carbono" />
+        <button>Modo comprador</button>
+        <button>Modo vendedor</button>
     </div>
   );
 }

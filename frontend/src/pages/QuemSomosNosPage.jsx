@@ -1,7 +1,7 @@
 // src/AboutUs.js
 import React from 'react';
   
-const QuemSomosNos = () => {
+const QuemSomosNosPage = () => {
 
   return (
     <div>
@@ -27,4 +27,4 @@ const QuemSomosNos = () => {
   );
 }
 
-export default QuemSomosNos;
+export default QuemSomosNosPage;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TelaInicial() {
+function TelaInicialPage() {
   return (
     <div className="App">
       <header className="App-header">
@@ -47,4 +47,4 @@ function TelaInicial() {
   );
 }
 
-export default TelaInicial;
+export default TelaInicialPage;
