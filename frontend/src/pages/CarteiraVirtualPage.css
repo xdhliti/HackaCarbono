@@ -23,11 +23,3 @@
     align-items: center;
     flex-direction: column;
 }
-
-.dados-pessoais {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 500px;
-    margin: 20px 20px 20px 700px;
-}
