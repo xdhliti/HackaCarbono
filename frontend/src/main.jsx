@@ -3,6 +3,8 @@ import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { WagmiConfig } from 'wagmi'
+import { chains, config } from './wagmi'
 
 import BolsaVerdePage from './pages/BolsaVerdePage.jsx';
 import BlockchainPage from './pages/BlockchainPage.jsx';
@@ -24,23 +26,26 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-        <React.StrictMode>
-          <BrowserRouter>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <Link to="/" element={<TelaInicialPage />}> TelaInicialPage </Link>
-              <Link to="/quemSomosNos" element={<QuemSomosNosPage />}> QuemSomosNosPage </Link>
-              <Link to="/blockchain" element={<BlockchainPage />}> BlockchainPage </Link>
-              <Link to="/faleConosco" element={<FaleConoscoPage />}> FaleConoscoPage </Link>
-              <Link to="/creditoDeCarbono" element={<CreditoDeCarbonoPage />}> CreditoDeCarbonoPage </Link>
-              <Link to="/bolsaVerde" element={<BolsaVerdePage />}> BolsaVerdePage </Link>
-              <Link to="/doacoesSustentaveis" element={<DoacoesSustentaveisPage />}> DoacoesSustentaveisPage </Link>
-              <Link to="/login" element={<LoginPage />}> LoginPage </Link>
-
-              <Link to="/perfil" element={<PerfilPage />} ></Link>
-              <Link to="/doar" element={<DoarPage />} ></Link>
-              <Link to="/modoComprador" element={<ModoCompradorPage />} ></Link>
-              <Link to="/dadosPessoais" element={<DadosPessoaisPage />} ></Link>
-              <Link to="/carteiraVirtual" element={<CarteiraVirtualPage />} ></Link>
+    <WagmiConfig config={config}>
+      <RainbowKitProvider chains={chains}>
+      <BrowserRouter>
+            <nav class="navbarClass">
+              <div className="navbarDiv">
+                <Link to="/" element={<TelaInicialPage />} class="linkButton"> Tela Inicial </Link>
+                <Link to="/quemSomosNos" element={<QuemSomosNosPage />} class="linkButton"> Sobre Nós </Link>
+                <Link to="/blockchain" element={<BlockchainPage />} class="linkButton"> Blockchain</Link>
+                <Link to="/faleConosco" element={<FaleConoscoPage />} class="linkButton"> Fale Conosco</Link>
+                <Link to="/creditoDeCarbono" element={<CreditoDeCarbonoPage />} class="linkButton"> Credito de Carbono</Link>
+                <Link to="/bolsaVerde" element={<BolsaVerdePage />} class="linkButton"> Bolsa Verde</Link>
+                <Link to="/doacoesSustentaveis" element={<DoacoesSustentaveisPage />} class="linkButton"> Doacoes Sustentaveis</Link>
+                <Link to="/login" element={<LoginPage />} class="linkButton"> Login </Link>
+                <Link to="/perfil" element={<PerfilPage />} class="linkButton" ></Link>
+                <Link to="/doar" element={<DoarPage />} class="linkButton"></Link>
+                <Link to="/modoComprador" element={<ModoCompradorPage />} class="linkButton" ></Link>
+                <Link to="/dadosPessoais" element={<DadosPessoaisPage />}  class="linkButton"></Link>
+                <Link to="/carteiraVirtual" element={<CarteiraVirtualPage />} class="linkButton" ></Link>
+              </div>
+             
               
             </nav>
             <Routes>
@@ -61,6 +66,14 @@ root.render(
 
             </Routes>
           </BrowserRouter>
-        </React.StrictMode>
+      </RainbowKitProvider>
+    </WagmiConfig>
+          
   </React.StrictMode>,
 );
+
+const estiloLink = {
+  color: 'inherit',
+  textDecoration: 'none',
+};
+
