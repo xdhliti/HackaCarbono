@@ -1,0 +1,23 @@
+.navbarDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+    padding-left: 100px;
+    height: 60px;
+    align-items: center;
+
+}
+.linkButton {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: font-size 0.3s; /* Adiciona uma transição suave */
+}
+
+.linkButton:hover {
+    font-size: 1.2em; /* Ajuste o tamanho da fonte ao passar o mouse */
+}
+.navbarClass {
+    background-color: green;
+}

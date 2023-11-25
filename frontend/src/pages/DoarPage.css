@@ -1,0 +1,9 @@
+.central {
+    display: flex;
+    justify-content: center;
+    
+}
+.btn btn-primary {
+    display: flex;
+    justify-content: center;
+}

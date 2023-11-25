@@ -1,0 +1,9 @@
+.introducao-carbono {
+    display: flex;
+    justify-content: center;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}

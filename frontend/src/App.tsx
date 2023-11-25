@@ -1,7 +1,6 @@
 import React from 'react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { AppBar, Container, Toolbar, Typography, CssBaseline, useTheme } from '@mui/material';
-import { ContractInteractionList } from './components/ContractInteractionList';
 
 export function App() {
   const theme = useTheme();
@@ -19,7 +18,6 @@ export function App() {
       </AppBar>
 
       <Container sx={{ paddingTop: '64px', backgroundColor: theme.palette.background.default }}>
-        <ContractInteractionList />
       </Container>     
     </div>
   );
