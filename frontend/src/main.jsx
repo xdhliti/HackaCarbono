@@ -15,6 +15,8 @@ import FaleConoscoPage from './pages/FaleConoscoPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import TelaInicialPage from './pages/TelaInicialPage.jsx';
 import ModoCompradorPage from './pages/ModoCompradorPage';
+import CarteiraVirtualPage from './pages/CarteiraVirtualPage.jsx';
+import DadosPessoaisPage from './pages/DadosPessoaisPage.jsx';
 
 import "./index.css"
 
@@ -37,6 +39,8 @@ root.render(
               <Link to="/perfil" element={<PerfilPage />} ></Link>
               <Link to="/doar" element={<DoarPage />} ></Link>
               <Link to="/modoComprador" element={<ModoCompradorPage />} ></Link>
+              <Link to="/dadosPessoais" element={<DadosPessoaisPage />} ></Link>
+              <Link to="/carteiraVirtual" element={<CarteiraVirtualPage />} ></Link>
               
             </nav>
             <Routes>
@@ -52,6 +56,8 @@ root.render(
               <Route path="perfil" element={<PerfilPage />} />
               <Route path="doar" element={<DoarPage />} />
               <Route path="modoComprador" element={<ModoCompradorPage />} />
+              <Route path="dadosPessoais" element={<DadosPessoaisPage />} />
+              <Route path="carteiraVirtual" element={<CarteiraVirtualPage />} />
 
             </Routes>
           </BrowserRouter>

@@ -6,9 +6,14 @@ const ProdutoCredito = () => {
   return (
     <>
     <div>
+      <div class="quadrado-externo">
+      <div class="quadrado-interno">
         <h1/>Crédito de carbono <h1/>
-        <img src="../../../public/imagemLogin.jpg" alt="foto de arvore" />
-        <button onClick={<Route path="/valorPagamento" element={<Descricao />} />}>Mais informações</button>
+        <img src="../../../public/images/imagemLogin.jpg" alt="foto de arvore" />
+        
+        <button>Mais informações</button>
+      </div>
+      </div>
     </div>
     </>
   );

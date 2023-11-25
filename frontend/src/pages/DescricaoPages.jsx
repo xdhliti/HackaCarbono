@@ -1,7 +1,7 @@
 // src/pages/DoacoesSustentaveisPage.js
 import React, { useState } from 'react';
 
-const ProdutoCredito = () => {
+const DescricaoPage = () => {
 
   return (
     <>
@@ -12,10 +12,10 @@ const ProdutoCredito = () => {
     <div class='descricao-lado-direito'>
         <h1>Crédito de carbono de 25 propriedades diferentes</h1>
         <p>Comprando esses créditos de carbono você estará não apenas colaborando com o meio ambiente mais também favorecendo pequenos e médios proprietários nessa área.</p>
-        <button onClick={<Route path="/valorPagamento" element={<Pagamento />} />}>Enviar</button>
+        <button>Enviar</button>
     </div>
     </>
   );
 }
 
-export default ProdutoCredito;
+export default DescricaoPage;
