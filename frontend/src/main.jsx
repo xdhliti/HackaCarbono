@@ -18,7 +18,7 @@ import LoginPage from './pages/LoginPage.jsx';
 import TelaInicialPage from './pages/TelaInicialPage.jsx';
 import ModoCompradorPage from './pages/ModoCompradorPage';
 import CarteiraVirtualPage from './pages/CarteiraVirtualPage.jsx';
-import DadosPessoaisPage from './pages/DadosPessoaisPage.jsx';
+import DescricaoPage from './pages/DescricaoPage.jsx';
 
 import "./index.css"
 
@@ -61,8 +61,8 @@ root.render(
               <Route path="perfil" element={<PerfilPage />} />
               <Route path="doar" element={<DoarPage />} />
               <Route path="modoComprador" element={<ModoCompradorPage />} />
-              <Route path="dadosPessoais" element={<DadosPessoaisPage />} />
               <Route path="carteiraVirtual" element={<CarteiraVirtualPage />} />
+              <Route path="descricao" element={<DescricaoPage />} />
 
             </Routes>
           </BrowserRouter>

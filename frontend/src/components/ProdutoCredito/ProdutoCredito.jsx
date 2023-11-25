@@ -1,21 +1,17 @@
-// src/pages/DoacoesSustentaveisPage.js
-import React, { useState } from 'react';
+import React from 'react';
+import {Link } from "react-router-dom";
 
-const ProdutoCredito = () => {
+import "./ProdutoCredito.css";
 
+const ProdutoCredito = ({ nome, imagem }) => {
   return (
-    <>
-    <div>
-      <div class="quadrado-externo">
-      <div class="quadrado-interno">
-        <h1/>Crédito de carbono <h1/>
-        <img src="../../../public/images/imagemLogin.jpg" alt="foto de arvore" />
-        
-        <button>Mais informações</button>
-      </div>
-      </div>
+    <div className="quadrado">
+      <h1 class="texto">{nome}</h1>
+      <img className="imagem" src={imagem} alt="Foto de árvore" />
+      <Link to="/descricao">
+      <button className="btn btn-primary">Mais informações</button>
+      </Link>
     </div>
-    </>
   );
 }
 

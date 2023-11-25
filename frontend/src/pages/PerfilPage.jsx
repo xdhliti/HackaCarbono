@@ -5,7 +5,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 import "./PerfilPage.css"
 
-const PerfilPage = () => {
+const PerfilPage  = ({nome, email, telefone, senha}) => {
 
     return (
         <>
