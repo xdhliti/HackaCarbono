@@ -1,0 +1,14 @@
+.texto-1 {
+    margin: 10px 900px 100px 10px;
+    z-index: 5;
+}
+
+.texto-2 {
+    margin: 100px 10px 700px 900px;
+    z-index: 5;
+}
+
+.texto-3 {
+    margin: 10px 900px 100px 10px;
+    z-index: 5;
+}

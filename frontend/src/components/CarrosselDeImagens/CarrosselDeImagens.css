@@ -1,0 +1,8 @@
+.carrossel {
+    transform: scale(0.8);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    border-top: 0px;
+}

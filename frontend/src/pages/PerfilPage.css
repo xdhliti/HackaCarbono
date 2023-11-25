@@ -1,0 +1,32 @@
+.fundo {
+    background-color: #A8A8A8;
+}
+
+.opcoes {
+    background-color: #545454;
+    height: 140px;
+    width: 100px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 200px;
+    border-radius: 20px;
+}
+
+.walletButton {
+    width: 144px;
+}
+.ButtonDados {
+    border-radius: 10px;
+    border-color: none;
+    width: 130px;
+    padding: 4px;
+    transition: transform 0.3s ease; 
+}
+
+.ButtonDados:hover {
+    transform: scale(1.09); 
+}

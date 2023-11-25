@@ -1,0 +1,22 @@
+.quadrado {
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.imagem {
+    height: 100px;
+    width: 150px;
+}
+
+.texto {
+    font-size: 12px;
+}

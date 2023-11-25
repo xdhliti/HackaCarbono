@@ -1,0 +1,15 @@
+.central {
+    display: flex;
+    justify-content: center;
+}
+
+.central-texto {
+    display: flex;
+    justify-content: center;
+    margin: 10px 200px 10px 200px;   
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
