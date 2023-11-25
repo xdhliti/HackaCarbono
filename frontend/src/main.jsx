@@ -37,16 +37,13 @@ root.render(
                 <Link to="/faleConosco" element={<FaleConoscoPage />} class="linkButton"> Fale Conosco</Link>
                 <Link to="/creditoDeCarbono" element={<CreditoDeCarbonoPage />} class="linkButton"> Credito de Carbono</Link>
                 <Link to="/bolsaVerde" element={<BolsaVerdePage />} class="linkButton"> Bolsa Verde</Link>
-                <Link to="/doacoesSustentaveis" element={<DoacoesSustentaveisPage />} class="linkButton"> Doacoes Sustentaveis</Link>
+                <Link to="/doacoesSustentaveis" element={<DoacoesSustentaveisPage />} class="linkButton"> Doacoes Sustentáveis</Link>
                 <Link to="/login" element={<LoginPage />} class="linkButton"> Login </Link>
                 <Link to="/perfil" element={<PerfilPage />} class="linkButton" ></Link>
                 <Link to="/doar" element={<DoarPage />} class="linkButton"></Link>
                 <Link to="/modoComprador" element={<ModoCompradorPage />} class="linkButton" ></Link>
-                <Link to="/dadosPessoais" element={<DadosPessoaisPage />}  class="linkButton"></Link>
                 <Link to="/carteiraVirtual" element={<CarteiraVirtualPage />} class="linkButton" ></Link>
               </div>
-             
-              
             </nav>
             <Routes>
               <Route path="/" element={<TelaInicialPage />} />
@@ -72,8 +69,4 @@ root.render(
   </React.StrictMode>,
 );
 
-const estiloLink = {
-  color: 'inherit',
-  textDecoration: 'none',
-};
 
