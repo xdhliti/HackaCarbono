@@ -1,8 +1,20 @@
 .footer-bg {
-    background-image: url('./public/Imagem_rodape.svg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+    background-image: url('../../../public/images/imagemRodape.svg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white; /* Cor do texto no rodapé */
     padding: 100px 70px;
+}
+
+.image-fluid {
+    max-width: 30%;
+}
+
+.esquerda {
+    margin-right: 900px;
+}
+
+.direita {
+    margin-left: 900px;
 }

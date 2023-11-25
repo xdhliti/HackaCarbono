@@ -1,14 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import FormDeContato from "../components/Login/Login.jsx"
+const NoMatch = () => {
+  return (
+    <div>NoMatch</div>
+  )
+}
 
-const NoMatchPage = () => {
-
-    return (
-        <>
-
-        </>
-    );
-  }
-  
-  export default NoMatchPage;
+export default NoMatch

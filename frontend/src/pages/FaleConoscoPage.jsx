@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
+import Footer from '../components/Footer/Footer';
 
-import FormDeContato from "../components/FormDeContato/FormDeContato.jsx"
+import "./FaleConoscoPage.css"
 
 const FaleConoscoPage = () => {
 
     return (
         <>
+        <div class="imagem-fundo-1">
             <div class="container mt-4">
+            <br></br>
+            <br></br>
                 <h1 class="text-center text-light">Formulário de comentários</h1>
                 <p class="text-center text-light">Por favor, omplete o formulário abaixo para nos enviar algum comentário.</p>
 
@@ -40,6 +44,14 @@ const FaleConoscoPage = () => {
                     </div>
                 </div>
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            </div>
+            <Footer></Footer>
         </>
     );
   }

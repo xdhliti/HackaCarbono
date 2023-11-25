@@ -2,30 +2,29 @@ import '@rainbow-me/rainbowkit/styles.css';
 import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { WagmiConfig } from 'wagmi';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 import BolsaVerdePage from './pages/BolsaVerdePage.jsx';
 import BlockchainPage from './pages/BlockchainPage.jsx';
 import CreditoDeCarbonoPage from './pages/CreditoDeCarbonoPage.jsx';
 import DoacoesSustentaveisPage from './pages/DoacoesSustentaveisPage.jsx';
-import NoMatchPage from './pages/NoMatch.jsx';
+import DoarPage from './pages/DoarPage.jsx';
 import QuemSomosNosPage from './pages/QuemSomosNosPage.jsx';
 import PerfilPage from './pages/PerfilPage.jsx';
 import FaleConoscoPage from './pages/FaleConoscoPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import TelaInicialPage from './pages/TelaInicialPage.jsx';
-import Footer from './components/Footer/Footer';
+import ModoCompradorPage from './pages/ModoCompradorPage';
+
+import "./index.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <WagmiConfig config={config}>
-      <RainbowKitProvider chains={chains}>
         <React.StrictMode>
           <BrowserRouter>
-            <nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <Link to="/" element={<TelaInicialPage />}> TelaInicialPage </Link>
               <Link to="/quemSomosNos" element={<QuemSomosNosPage />}> QuemSomosNosPage </Link>
               <Link to="/blockchain" element={<BlockchainPage />}> BlockchainPage </Link>
@@ -34,8 +33,11 @@ root.render(
               <Link to="/bolsaVerde" element={<BolsaVerdePage />}> BolsaVerdePage </Link>
               <Link to="/doacoesSustentaveis" element={<DoacoesSustentaveisPage />}> DoacoesSustentaveisPage </Link>
               <Link to="/login" element={<LoginPage />}> LoginPage </Link>
-              <Link to="/perfil" element={<PerfilPage />}> PerfilPage </Link>
-              <Link to="*" element={<NoMatchPage />} > NoMatch </Link>
+
+              <Link to="/perfil" element={<PerfilPage />} ></Link>
+              <Link to="/doar" element={<DoarPage />} ></Link>
+              <Link to="/modoComprador" element={<ModoCompradorPage />} ></Link>
+              
             </nav>
             <Routes>
               <Route path="/" element={<TelaInicialPage />} />
@@ -46,14 +48,13 @@ root.render(
               <Route path="bolsaVerde" element={<BolsaVerdePage />} />
               <Route path="doacoesSustentaveis" element={<DoacoesSustentaveisPage />} />
               <Route path="login" element={<LoginPage />} />
+
               <Route path="perfil" element={<PerfilPage />} />
-              <Route path="*" element={<NoMatchPage />} />
+              <Route path="doar" element={<DoarPage />} />
+              <Route path="modoComprador" element={<ModoCompradorPage />} />
+
             </Routes>
           </BrowserRouter>
         </React.StrictMode>
-
-          <Footer/>    
-        </RainbowKitProvider>
-    </WagmiConfig>
   </React.StrictMode>,
 );

@@ -1,12 +1,18 @@
 import React from 'react';
+import Footer from '../components/Footer/Footer';
+import {Link } from "react-router-dom";
 
-import FormDeContato from "../components/Login/Login.jsx"
+import "./LoginPage.css"
+
+
 
 const LoginPage = () => {
 
     return (
         <>
+        <div class="imagem-fundo-2">
         <div class="container mt-4">
+        <br></br>
                 <h1 class="text-center text-light">LOGIN</h1>
                 <p class="text-center text-light">Para realizar seu login preencha os campos abaixo:</p>
 
@@ -29,11 +35,23 @@ const LoginPage = () => {
                                 <label for="senha" class="form-label text-light">Senha:</label>
                                 <input type="password" class="form-control" id="email" placeholder="Sua senha"/> 
                             </div>
-                            <button type="submit" class="btn btn-primary" href="./PerfilPage.jsx">Logar</button>
+                            <Link to="/perfil">
+                            <button type="submit" class="btn btn-primary" href="./PerfilPage.jsx" >Logar</button>
+                            </Link>
                         </form>
                     </div>
                 </div>
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            </div>
+            <Footer></Footer>
         </>
     );
   }
