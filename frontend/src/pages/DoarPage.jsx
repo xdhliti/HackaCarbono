@@ -12,7 +12,7 @@ const DoarPage = () => {
         <br></br> 
         <h1 class="central"> Quanto você pode doar? </h1>
         <div class="central">
-        <div class="mb-3">
+        <div class="bloco">
             <label for="pagamento" class="form-label text-light">Valor</label>
             <input type="number" class="form-control" id="pagamento" placeholder="Valor"/>
             <br></br>
@@ -23,6 +23,7 @@ const DoarPage = () => {
             <option value="opcao3">Cartão de débito</option>
             <option value="opcao4">Boleto</option>
         </select>
+        <button class="btn-primary" align="center">Pagar</button>
         </div>
         </div>
         <Link to="/doacoesSustentaveis">

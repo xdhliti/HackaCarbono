@@ -1,9 +1,16 @@
 .central {
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
-.btn btn-primary {
+.btn-primary {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+.bloco {
+    display: flex;
+    flex-direction: column;
 }
