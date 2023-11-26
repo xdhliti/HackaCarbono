@@ -23,12 +23,11 @@ const DoarPage = () => {
             <option value="opcao3">Cartão de débito</option>
             <option value="opcao4">Boleto</option>
         </select>
-        <button class="btn-primary" align="center">Pagar</button>
-        </div>
-        </div>
-        <Link to="/doacoesSustentaveis">
+        <Link to="/doacoesSustentaveis" class="link">
         <button class="btn btn-primary" align="center">Pagar</button>
         </Link>
+        </div>
+        </div>
         <Footer></Footer>
         </>
     );
