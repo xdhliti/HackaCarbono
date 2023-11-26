@@ -12,6 +12,7 @@ const PerfilPage  = ({nome, email, telefone, senha}) => {
         <br></br>
         <br></br>
         <br></br>
+        <div className="lado">
         <div class="opcoes">
             <Link to="/perfil">
             <button class="ButtonDados">Dados pessoais</button>
@@ -21,7 +22,7 @@ const PerfilPage  = ({nome, email, telefone, senha}) => {
             </Link>
         </div>
         <div class="dados-pessoais">
-            <h1>Olá {nome}!!!</h1>
+            <h1>Olá!!!</h1>
             <h1>Nome:</h1>
             <h1>{nome}</h1>
             <h1>Email:</h1>
@@ -30,6 +31,7 @@ const PerfilPage  = ({nome, email, telefone, senha}) => {
             <h1>{telefone}</h1>   
             <h1>Senha:</h1>
             <h1>{senha}</h1>
+        </div>
         </div>
         </div>
         <Footer></Footer>

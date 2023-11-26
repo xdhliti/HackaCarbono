@@ -4,15 +4,15 @@
 
 .opcoes {
     background-color: #545454;
-    height: 140px;
-    width: 100px;
+    height: 100px;
+    width: 80px;
     margin-left: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
     flex-direction: column;
-    padding: 200px;
+    padding: 150px;
     border-radius: 20px;
 }
 
@@ -25,8 +25,28 @@
     width: 130px;
     padding: 4px;
     transition: transform 0.3s ease; 
+    transform: scale(1.8);
+    border: none;
+    background-color: #545454;
+    color: white;
 }
 
 .ButtonDados:hover {
-    transform: scale(1.09); 
+    transform: scale(1.95); 
+    color: rgb(167, 167, 167);
+}
+
+.dados-pessoais {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    padding-left: 50px;
+}
+
+.lado {
+    display: flex;
+    flex-direction: row;
+    
 }

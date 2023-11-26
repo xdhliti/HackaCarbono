@@ -1,10 +1,11 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
+import {Link } from "react-router-dom";
 
 import "./DoarPage.css"
 
 const DoarPage = () => {
-
+ 
     return (
         <>
         <br></br>
@@ -24,7 +25,9 @@ const DoarPage = () => {
         </select>
         </div>
         </div>
+        <Link to="/doacoesSustentaveis">
         <button class="btn btn-primary" align="center">Pagar</button>
+        </Link>
         <Footer></Footer>
         </>
     );

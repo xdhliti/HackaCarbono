@@ -16,7 +16,8 @@
 }
 
 .linkButton:hover {
-    font-size: 1.2em; /* Ajuste o tamanho da fonte ao passar o mouse */
+    font-size: 1.1em; /* Ajuste o tamanho da fonte ao passar o mouse */
+    color: rgb(0, 63, 0);
 }
 .navbarClass {
     background-color: green;

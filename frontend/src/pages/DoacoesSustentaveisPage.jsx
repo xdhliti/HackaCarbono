@@ -5,7 +5,6 @@ import {Link } from "react-router-dom";
 import "./DoacoesSustentaveisPage.css"
 
 const DoacoesSustentaveisPage = () => {
-
   return (
     <div>
       <br></br>
@@ -16,7 +15,6 @@ const DoacoesSustentaveisPage = () => {
         <br></br>
         <br></br>
         <h1 class="central">QUANTO JÁ RECEBEMOS ATÉ AGORA</h1>
-        <p class="central-texto"></p>
         <br></br>
         <div class="botao">
         <Link to="/doar">
