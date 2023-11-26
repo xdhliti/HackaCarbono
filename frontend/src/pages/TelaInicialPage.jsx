@@ -8,7 +8,6 @@ function TelaInicialPage() {
   return (
     <>
       <CarrosselDeImagens></CarrosselDeImagens>
-
       <div class="Texto-inicial">
         <h1><strong>NO QUE PODEMOS TE AJUDAR?</strong></h1>
         <h2>

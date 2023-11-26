@@ -4,16 +4,14 @@ import Footer from '../components/Footer/Footer';
 import {Link } from "react-router-dom";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
-import "./DoacoesSustentaveisPage.css"
+import "./CarteiraVirtualPage.css"
 
 const CarteiraVirtualPage = () => {
 
   return (
     <>
-      <div class="fundo">
-            <br></br>
-            <br></br>
-            <br></br>
+      <div class="backgroundUser">
+
             <div class="opcoes">
                 <Link to="/perfil">
                 <button className="ButtonDados">Dados pessoais</button>
@@ -24,11 +22,7 @@ const CarteiraVirtualPage = () => {
             </div>
             <div className="walletButton">
                     <ConnectButton />
-                </div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            </div>
       </div>
     <Footer></Footer>
 </>

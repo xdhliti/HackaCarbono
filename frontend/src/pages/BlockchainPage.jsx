@@ -5,23 +5,25 @@ import Footer from '../components/Footer/Footer';
 const BlockchainPage = () => {
 
   return (
-    <div>
-      <header className="texto-1">
+    <>
+    <div className='Wrapper'>
+      <div className="textoBlockchain">
         <h1>O QUE É BLOCKCHAIN?</h1>
+        <br></br>
         <h2>BLOCKCHAIN</h2>
         <p>
           É uma tecnologia de registro descentralizada que utiliza grandes técnicas de criptografia para garantir a segurança e a integridade das transações. Funciona como um livro de registro digital, composto por blocos, onde cada um contém um conjunto de transações verificadas, que são encadeados de forma cronológica ao bloco anterior, se tornando, dessa forma, imutáveis. A descentralização elimina a necessidade de uma autoridade central, distribuindo o controle entre os participantes da rede.
         </p>
-      </header>
-      
-      <section className="texto-2">
+        <div className="textoVantagens">
         <h2>VANTAGENS</h2>
         <p>
           O blockchain oferece uma série de vantagens para a forma como lidamos com transações e armazenamento de dados. Em primeiro lugar, ele proporciona segurança por meio da alta capacidade criptográfica e pela distribuição do registro digital, tornando extremamente difícil a alteração maliciosa de informações. Além disso, a descentralização elimina a necessidade de intermediários nas transações, reduzindo custos e aumentando a eficiência do processo. Também facilita a rastreabilidade, sendo particularmente benéfico em setores como cadeia de suprimentos e serviços financeiros.
         </p>
-      </section>
+      </div>
+      </div>
+      
 
-      <section className="texto-3">
+      <div className="textoAplicacoes">
         <h2>APLICAÇÕES</h2>
         <p>
           A tecnologia Blockchain tem várias aplicações inovadoras que vão além do uso no universo de criptomoedas.
@@ -46,9 +48,10 @@ const BlockchainPage = () => {
         <p>
           Contratos inteligentes, que são programas autoexecutáveis na blockchain, podem ser usados para automatizar doações condicionais. Por exemplo, uma doação só seria liberada se metas específicas, como a conclusão de um projeto sustentável, fossem atingidas. Isso garante que os fundos sejam utilizados efetivamente para alcançar os objetivos desejados.
         </p>
-      </section>
-    <Footer></Footer>
+      </div>
     </div>
+    <Footer></Footer>
+    </> 
   );
 }
 

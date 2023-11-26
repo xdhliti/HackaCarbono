@@ -1,21 +1,18 @@
-.titulo {
+.imagemConteudo {
+    background-image: url("../../public/images/imagemQuemNosSomos.jpg");
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 0px;
-    padding: 0px;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-left: 20px;
+
+}
+.titulo {
+    padding-left: 20px;
+    padding-top: 30px;
 }
 
 .texto-1 {
-    margin: 0px 10px 100px 900px;
-    z-index: 5;
 }
 
 .texto-2 {
-    margin: 10px 900px 10px 10px;
-    z-index: 5;
-}
-
-.imagem {
-    background-image: url("../../public/images/imagemQuemNosSomos.jpg");
 }
