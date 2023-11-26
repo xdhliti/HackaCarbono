@@ -1,13 +1,12 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
-
 import "./BlockchainPage.css"
+import Footer from '../components/Footer/Footer';
 
 const BlockchainPage = () => {
 
   return (
     <div>
-      <header class="texto-1">
+      <header className="texto-1">
         <h1>O QUE É BLOCKCHAIN?</h1>
         <h2>BLOCKCHAIN</h2>
         <p>
@@ -15,14 +14,14 @@ const BlockchainPage = () => {
         </p>
       </header>
       
-      <section class="texto-2">
+      <section className="texto-2">
         <h2>VANTAGENS</h2>
         <p>
           O blockchain oferece uma série de vantagens para a forma como lidamos com transações e armazenamento de dados. Em primeiro lugar, ele proporciona segurança por meio da alta capacidade criptográfica e pela distribuição do registro digital, tornando extremamente difícil a alteração maliciosa de informações. Além disso, a descentralização elimina a necessidade de intermediários nas transações, reduzindo custos e aumentando a eficiência do processo. Também facilita a rastreabilidade, sendo particularmente benéfico em setores como cadeia de suprimentos e serviços financeiros.
         </p>
       </section>
 
-      <section class="texto-3">
+      <section className="texto-3">
         <h2>APLICAÇÕES</h2>
         <p>
           A tecnologia Blockchain tem várias aplicações inovadoras que vão além do uso no universo de criptomoedas.
@@ -48,7 +47,7 @@ const BlockchainPage = () => {
           Contratos inteligentes, que são programas autoexecutáveis na blockchain, podem ser usados para automatizar doações condicionais. Por exemplo, uma doação só seria liberada se metas específicas, como a conclusão de um projeto sustentável, fossem atingidas. Isso garante que os fundos sejam utilizados efetivamente para alcançar os objetivos desejados.
         </p>
       </section>
-      <Footer></Footer>
+    <Footer></Footer>
     </div>
   );
 }

@@ -1,19 +1,26 @@
 .introducao-bolsa {
-    display: flex;
-    margin: 20px 900px 20px 50px;
 }
 
 .sujestoes {
+}
+
+.Wrapper {
+    padding-top: 70px;
+    gap: 50px;
     display: flex;
-    margin: 20px 50px 20px 900px
+    flex-direction: row;
 }
 
-.esquerda {
-    padding: 20px 50px 20px 20px;
-    margin-top: 200px;
+.esquerdaDiv {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    align-items: center;
+    padding-top: 220px;
 }
 
-.direita {
-    padding: 20px 20px 400px 20px;
-    margin-top: -300px;
+.direitaDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

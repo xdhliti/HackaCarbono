@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import { WagmiConfig } from 'wagmi'
-import { chains, config } from './wagmi'
+import { chains, config } from './wagmi.ts'
 
 import BolsaVerdePage from './pages/BolsaVerdePage.jsx';
 import BlockchainPage from './pages/BlockchainPage.jsx';
@@ -16,7 +16,7 @@ import PerfilPage from './pages/PerfilPage.jsx';
 import FaleConoscoPage from './pages/FaleConoscoPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import TelaInicialPage from './pages/TelaInicialPage.jsx';
-import ModoCompradorPage from './pages/ModoCompradorPage';
+import ModoCompradorPage from './pages/ModoCompradorPage.jsx';
 import CarteiraVirtualPage from './pages/CarteiraVirtualPage.jsx';
 import DescricaoPage from './pages/DescricaoPage.jsx';
 
@@ -29,7 +29,7 @@ root.render(
     <WagmiConfig config={config}>
       <RainbowKitProvider chains={chains}>
       <BrowserRouter>
-            <nav class="navbarClass">
+        <nav class="navbarClass">
               <div className="navbarDiv">
                 <Link to="/" element={<TelaInicialPage />} class="linkButton"> Tela Inicial </Link>
                 <Link to="/quemSomosNos" element={<QuemSomosNosPage />} class="linkButton"> Sobre Nós </Link>
@@ -44,7 +44,7 @@ root.render(
                 <Link to="/modoComprador" element={<ModoCompradorPage />} class="linkButton" ></Link>
                 <Link to="/carteiraVirtual" element={<CarteiraVirtualPage />} class="linkButton" ></Link>
               </div>
-            </nav>
+        </nav>
             <Routes>
               <Route path="/" element={<TelaInicialPage />} />
               <Route path="quemSomosNos" element={<QuemSomosNosPage />} />
