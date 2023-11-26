@@ -29,7 +29,7 @@ root.render(
     <WagmiConfig config={config}>
       <RainbowKitProvider chains={chains}>
       <BrowserRouter>
-            <nav class="navbarClass">
+        <nav class="navbarClass">
               <div className="navbarDiv">
                 <Link to="/" element={<TelaInicialPage />} class="linkButton"> Tela Inicial </Link>
                 <Link to="/quemSomosNos" element={<QuemSomosNosPage />} class="linkButton"> Sobre Nós </Link>
@@ -44,7 +44,7 @@ root.render(
                 <Link to="/modoComprador" element={<ModoCompradorPage />} class="linkButton" ></Link>
                 <Link to="/carteiraVirtual" element={<CarteiraVirtualPage />} class="linkButton" ></Link>
               </div>
-            </nav>
+        </nav>
             <Routes>
               <Route path="/" element={<TelaInicialPage />} />
               <Route path="quemSomosNos" element={<QuemSomosNosPage />} />
