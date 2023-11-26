@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import { WagmiConfig } from 'wagmi'
-import { chains, config } from './wagmi'
+import { chains, config } from './wagmi.ts'
 
 import BolsaVerdePage from './pages/BolsaVerdePage.jsx';
 import BlockchainPage from './pages/BlockchainPage.jsx';
@@ -16,7 +16,7 @@ import PerfilPage from './pages/PerfilPage.jsx';
 import FaleConoscoPage from './pages/FaleConoscoPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import TelaInicialPage from './pages/TelaInicialPage.jsx';
-import ModoCompradorPage from './pages/ModoCompradorPage';
+import ModoCompradorPage from './pages/ModoCompradorPage.jsx';
 import CarteiraVirtualPage from './pages/CarteiraVirtualPage.jsx';
 import DescricaoPage from './pages/DescricaoPage.jsx';
 
