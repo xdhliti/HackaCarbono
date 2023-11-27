@@ -30,11 +30,11 @@ const config: HardhatUserConfig = {
     networks: {
         hardhat: {},
 		ETH_MAINNET: {
-			accounts: [`${process.env.PRIVATE_KEY}`],
+			//accounts: [`${process.env.PRIVATE_KEY}`],
 			url: `https://eth-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
 		},
 		ETH_SEPOLIA: {
-			accounts: [`${process.env.PRIVATE_KEY}`],
+			//accounts: [`${process.env.PRIVATE_KEY}`],
 			url: `https://eth-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
 		}
     },

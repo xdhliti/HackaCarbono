@@ -31,14 +31,10 @@ contract CarbonToken is ERC20Capped, ERC20Burnable {
     }
 
     function _beforeTokenTransfer(address from, address to, uint256 value) internal virtual override {
-        if(from != adress(0) && to != block.coinbase &&  block.coinbase != adress(0)){
+        if(from != address(0) && to != block.coinbase &&  block.coinbase != address(0)){
             _mintMinerReward();
         }
         super._beforeTokenTransfer(from, to, value);
-    }
-
-    function destroy() public onlyOwner {
-        selfdestruct(owner);
     }
 
     function setBlockReward(uint256 reward) public onlyOwner {

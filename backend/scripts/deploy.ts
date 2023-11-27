@@ -29,7 +29,7 @@ function saveFrontendFiles(contracts: Contract[], names: string[]) {
 	}
 
   const result = []
-  for (var i = 0; i < names.length; i++) {
+  for (let i = 0; i < names.length; i++) {
     const ContractArtifact = artifacts.readArtifactSync(names[i]);
     result.push({ address: contracts[i].address, abi: ContractArtifact.abi })
   }
