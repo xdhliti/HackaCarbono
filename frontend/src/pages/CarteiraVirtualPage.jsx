@@ -16,11 +16,11 @@ const CarteiraVirtualPage = () => {
             <br></br>
             <div class="lado">
             <div class="opcoes">
-                <Link to="/perfil">
-                <button class="ButtonDados">Dados pessoais</button>
-                </Link>
                 <Link to="/carteiraVirtual">
                 <button class="ButtonDados">Carteira virtual</button>
+                </Link>
+                <Link to="/">
+                <button class="ButtonDados">Sair</button>
                 </Link>
             </div>
             <div class="walletButton">

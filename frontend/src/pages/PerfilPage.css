@@ -36,15 +36,6 @@
     color: rgb(167, 167, 167);
 }
 
-.dados-pessoais {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
-    padding-left: 50px;
-}
-
 .lado {
     display: flex;
     flex-direction: row;
