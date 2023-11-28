@@ -5,9 +5,9 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   
   define: {
-    //global: 'globalThis',
+    global: 'globalThis',
     // CHANGE BETWEEN THIS TO DECLARATIONS. BELOW IS FOR BUILD/DEPLOY
-    global: (() => {
+    /*global: (() => {
        let globalVariable = 'globalThis';
        try {
          // Try to import @safe-global/safe-apps-provider
@@ -21,7 +21,7 @@ export default defineConfig({
          globalVariable = 'globalThis';
         }
        return globalVariable;
-      })()
+      })()*/
   },
   resolve: {
     alias: {

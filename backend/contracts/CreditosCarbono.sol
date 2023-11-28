@@ -7,7 +7,7 @@ contract CreditosCarbono is ERC721 {
     using Strings for uint256;
     uint256 tokenId;
     uint256 maxSupplay = 5;
-    uint256 price = 0.05 ether;
+    uint256 price = 0.05 FTC;
     string baseUri = "https://ipfs.io/ipfs/QmZVM4vYuVrAZcLHq9bXHxpP7hw3MWJxpJtLTNxZmmVWfD?filename=ipfs.json";
 
     constructor() ERC721("CreditosCarbono", "CCC") {

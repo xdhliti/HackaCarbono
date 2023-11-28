@@ -1,0 +1,28 @@
+.descrição-lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descrição-lado-direito {
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem {
+    height: 200px;
+    width: 300px;
+}
