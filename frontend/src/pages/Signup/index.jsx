@@ -4,6 +4,7 @@ import Button from "../../components/Button";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import Footer from '../../components/Footer/Footer';
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -35,6 +36,7 @@ const Signup = () => {
   };
 
   return (
+    <>
     <C.Container>
       <C.Label>SISTEMA DE LOGIN</C.Label>
       <C.Content>
@@ -66,6 +68,9 @@ const Signup = () => {
         </C.LabelSignin>
       </C.Content>
     </C.Container>
+
+    <Footer></Footer>
+    </>
   );
 };
 

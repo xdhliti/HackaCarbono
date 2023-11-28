@@ -20,7 +20,7 @@ const CreditoDeCarbonoPage = () => {
         <Link to="/modoComprador">
         <button class="btn btn-primary">Modo comprador</button>
         </Link>
-        <Link to="/login">
+        <Link to="/signIn">
         <button class="btn btn-primary">Modo vendedor</button>
         </Link>
         </div>

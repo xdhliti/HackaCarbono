@@ -6,13 +6,14 @@
 }
 
 .descrição-lado-direito {
-    width: 100px;
+    width: 10px;
     height: 100px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-right: 50px;
 }
 
 .descricao {
@@ -20,6 +21,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
 .imagem {

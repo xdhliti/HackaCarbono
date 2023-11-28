@@ -5,11 +5,11 @@ import "./ProdutoCredito.css";
 
 const ProdutoCredito = ({ nome, imagem }) => {
   return (
-    <div className="quadrado">
+    <div class="quadrado">
       <h1 class="texto">{nome}</h1>
-      <img className="imagem" src={imagem} alt="Foto de árvore" />
+      <img class="imagem" src={imagem} alt="Foto de árvore" />
       <Link to="/descricao">
-      <button className="btn btn-primary">Mais informações</button>
+      <button class="btn btn-primary">Mais informações</button>
       </Link>
     </div>
   );
