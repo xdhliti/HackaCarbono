@@ -4,7 +4,7 @@ import path from "path";
 import { Contract } from "ethers";
 
 export async function main() {
-    const creditosCarbonoFactory = await ethers.getContractFactory("CreditosCarbono");
+    const creditosCarbonoFactory = await ethers.getContractFactory("GameItem");
 
     const creditosCarbono = await creditosCarbonoFactory.deploy();
 
