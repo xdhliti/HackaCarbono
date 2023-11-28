@@ -22,6 +22,7 @@ import CarteiraVirtualPage from './pages/CarteiraVirtualPage.jsx';
 import DescricaoPage from './pages/DescricaoPage.jsx';
 import Signin from './pages/Signin/index.jsx';
 import Signup from './pages/Signup/index.jsx';
+import PagamentoCreditoPage from './pages/PagamentoCreditoPage.jsx';
 
 import "./index.css"
 
@@ -56,6 +57,7 @@ root.render(
                 <Link to="/doar" element={<DoarPage />} class="linkButton"></Link>
                 <Link to="/modoComprador" element={<ModoCompradorPage />} class="linkButton" ></Link>
                 <Link to="/carteiraVirtual" element={<CarteiraVirtualPage />} class="linkButton" ></Link>
+                <Link to="/pagamentoCredito" element={<PagamentoCreditoPage />} class="linkButton" ></Link>
               </div>
         </nav>
             <Routes>
@@ -74,7 +76,7 @@ root.render(
               <Route path="modoComprador" element={<ModoCompradorPage />} />
               <Route path="carteiraVirtual" element={<CarteiraVirtualPage />} />
               <Route path="descricao" element={<DescricaoPage />} />
-
+              <Route path="pagamentoCredito" element={<PagamentoCreditoPage />} />
             </Routes>
             </Fragment>
           </BrowserRouter>
