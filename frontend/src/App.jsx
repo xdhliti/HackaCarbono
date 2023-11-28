@@ -30,7 +30,7 @@ export function App() {
       const provider = new ethers.providers.Web3Provider(ethereum);
       const signer = provider.getSigner();
       const contrato = new ethers.Contract(contratoEndereco, contratoAbi, signer);
-      await contrato.makeMint(1); // Compra 1 CreditosCarbono, você pode ajustar a quantidade conforme necessário
+      await contrato.makeMint(addressWallet, 1); // Compra 1 CreditosCarbono, você pode ajustar a quantidade conforme necessário
 
     } catch (error) {
       console.log(error);
