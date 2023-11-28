@@ -6,18 +6,33 @@ import abi from './utils/abiCC.json';
 
 export function App() {
 
+
   const contratoAbi = abi.abi;
-  console.log(contratoAbi);
-  const contratoEndereco = '0x5FbDB2315678afecb367f032d93F64';
+  const contratoEndereco = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
 
-
+  const handleAddressChange = (event) => {
+    setAddressWallet(event.target.value);
+  };
 
   
   const handleBuyCreditos = async () => {
-    const provider = new ethers.providers.Web3Provider(ethereum);
-    const signer = provider.getSigner();
-    const contrato = new ethers.Contract(contractAddress, contractABI, signer);
-    await contrato.makeMint(1); // Compra 1 CreditosCarbono, você pode ajustar a quantidade conforme necessário
+    try {
+      const { ethereum } = window;
+
+      if (!ethereum) {
+        console.log("Garanta que possua a Metamask instalada!");
+        return;
+      }
+
+      const provider = new ethers.providers.Web3Provider(ethereum);
+      const signer = provider.getSigner();
+      const contrato = new ethers.Contract(contractAddress, contractABI, signer);
+      await contrato.makeMint(1); // Compra 1 CreditosCarbono, você pode ajustar a quantidade conforme necessário
+
+    } catch (error) {
+      console.log(error);
+    }
+    
   };
 
   return (
@@ -32,11 +47,19 @@ export function App() {
         </Toolbar>
       </AppBar>
 
-      <Container sx={{ paddingTop: '64px'  }}>
-        {/*<Button variant="contained" onClick={handleBuyCreditos}>
-          Comprar CreditosCarbono
-  </Button>*/}
-      </Container>     
+     <Container sx={{ paddingTop: '64px'  }}>
+           {/*<TextField
+              label="Endereço da Carteira"
+              variant="outlined"
+              value={addressWallet}
+              onChange={handleAddressChange}
+              style={{ marginBottom: '16px' }}
+            />
+            <Button variant="contained" onClick={handleBuyCreditos}>
+              Comprar CreditosCarbono
+            </Button>
+            */}  
+  </Container>   
     </div>
   );
 }
