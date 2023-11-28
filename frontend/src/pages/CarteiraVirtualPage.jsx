@@ -5,6 +5,7 @@ import {Link } from "react-router-dom";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { Account }  from './../components/wagmi-examples/Account'
 import { Balance, AccountBalance, FindBalance }  from './../components/wagmi-examples/Balance'
+import { ContractInteractionList } from '../components/ContractInteractionList'
 
 import "./CarteiraVirtualPage.css"
 
