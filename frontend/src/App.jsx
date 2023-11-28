@@ -52,17 +52,6 @@ export function App() {
       </AppBar>
 
      <Container sx={{ paddingTop: '64px'  }}>
-           {/*<TextField
-              label="Endereço da Carteira"
-              variant="outlined"
-              value={addressWallet}
-              onChange={handleAddressChange}
-              style={{ marginBottom: '16px' }}
-            />
-            <Button variant="contained" onClick={handleBuyCreditos}>
-              Comprar CreditosCarbono
-            </Button>
-            */}  
             <TextField
               label="Endereço da Carteira"
               variant="outlined"
