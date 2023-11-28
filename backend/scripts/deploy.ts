@@ -4,15 +4,15 @@ import path from "path";
 import { Contract } from "ethers";
 
 export async function main() {
-    const creditosCarbonoFactory = await ethers.getContractFactory("GameItem");
+    const carbonNFTFactory = await ethers.getContractFactory("CarbonNFT");
 
-    const creditosCarbono = await creditosCarbonoFactory.deploy();
+    const CarbonNFT = await carbonNFTFactory.deploy();
 
-    console.log("CreditosCarbono deployed to:", creditosCarbono.address);
+    console.log("CarbonNFT deployed to:", CarbonNFT.address);
 
-    saveFrontendFiles([creditosCarbono], ["CreditosCarbono"]);
+    saveFrontendFiles([CarbonNFT], ["CarbonNFT"]);
 
-    return { creditosCarbono };
+    return { CarbonNFT };
 }
 
 function saveFrontendFiles(contracts: Contract[], names: string[]) {
