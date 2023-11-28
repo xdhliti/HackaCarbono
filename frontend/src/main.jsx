@@ -57,7 +57,7 @@ root.render(
                 <Link to="/modoComprador" element={<ModoCompradorPage />} class="linkButton" ></Link>
                 <Link to="/carteiraVirtual" element={<CarteiraVirtualPage />} class="linkButton" ></Link>
               </div>
-            </nav>
+        </nav>
             <Routes>
               <Route path="/" element={<TelaInicialPage />} />
               <Route path="quemSomosNos" element={<QuemSomosNosPage />} />
