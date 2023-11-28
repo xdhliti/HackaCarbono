@@ -1,14 +1,16 @@
 // src/pages/DoacoesSustentaveisPage.js
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from '../components/Footer/Footer';
 import {Link } from "react-router-dom";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { Account }  from './../components/wagmi-examples/Account'
-import { Balance, AccountBalance, FindBalance }  from './../components/wagmi-examples/Balance'
+import { Account }  from '../components/wagmi-examples/Account'
+import { Balance, AccountBalance, FindBalance }  from '../components/wagmi-examples/Balance'
+import { useEffect, useState } from 'react';
+import "./CarteiraVirtualPage.css";
 
-import "./CarteiraVirtualPage.css"
 
 const CarteiraVirtualPage = () => {
+
 
   return (
     <>

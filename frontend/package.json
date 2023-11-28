@@ -26,6 +26,7 @@
 		"@openzeppelin/contracts": "^5.0.0",
 		"@rainbow-me/rainbowkit": "^1.0.0",
 		"buffer": "^6.0.3",
+		"ethers": "^6.9.0",
 		"process": "^0.11.10",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",

@@ -1,10 +1,8 @@
-import '@rainbow-me/rainbowkit/styles.css';
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import { WagmiConfig } from 'wagmi'
-import { chains, config } from './wagmi.ts'
+
 
 import BolsaVerdePage from './pages/BolsaVerdePage.jsx';
 import BlockchainPage from './pages/BlockchainPage.jsx';
@@ -19,6 +17,7 @@ import TelaInicialPage from './pages/TelaInicialPage.jsx';
 import ModoCompradorPage from './pages/ModoCompradorPage.jsx';
 import CarteiraVirtualPage from './pages/CarteiraVirtualPage.jsx';
 import DescricaoPage from './pages/DescricaoPage.jsx';
+import NFTPage from './pages/NFTPage.jsx';
 
 import "./index.css"
 
@@ -26,8 +25,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <WagmiConfig config={config}>
-      <RainbowKitProvider chains={chains}>
+
       <BrowserRouter>
         <nav class="navbarClass">
               <div className="navbarDiv">
@@ -60,11 +58,11 @@ root.render(
               <Route path="modoComprador" element={<ModoCompradorPage />} />
               <Route path="carteiraVirtual" element={<CarteiraVirtualPage />} />
               <Route path="descricao" element={<DescricaoPage />} />
+              <Route path="nft" element={<NFTPage />} />
 
             </Routes>
           </BrowserRouter>
-      </RainbowKitProvider>
-    </WagmiConfig>
+
           
   </React.StrictMode>,
 );
